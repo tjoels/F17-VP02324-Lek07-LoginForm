@@ -21,7 +21,7 @@
 <![endif]-->
 
 <!-- Add your site or application content here -->
-<div id="box">
+<div id="login" class="box">
     <br>
     <img
         src="https://upload.wikimedia.org/wikipedia/en/thumb/2/2a/Danmarks_Tekniske_Universitet_(logo).svg/707px-Danmarks_Tekniske_Universitet_(logo).svg.png"
@@ -36,6 +36,78 @@
         <input type="submit" value="Send data"><br>
     </form>
     <br>
+</div>
+
+<div id ="useradmin" class="box">
+    <div id="center">
+        Menu<br>
+        <a href="useradmin.html">User administration</a>
+        <a href="../index.html">Logout</a>
+        <h1>User administration</h1>
+        <a href="useredit.html">Edit user</a>
+    </div>
+
+    <table>
+        <thead>
+        <tr>
+            <th>Username</th>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Role</th>
+            <th>Active</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>bb</td>
+            <td>Bjørn</td>
+            <td>Bæver</td>
+            <td>user</td>
+            <td>yes</td>
+        </tr>
+        <tr>
+            <td>Bba</td>
+            <td>Berit</td>
+            <td>Bandit</td>
+            <td>Admin</td>
+            <td>no</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <td>a</td>
+            <td>b</td>
+            <td>c</td>
+            <td>d</td>
+            <td>e</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+<div id="createuser" class="box">
+    <div id="box">
+        <h1>Create user</h1>
+        <p>User ID:</p>
+        <form action="useradmin.html">
+            Username<input type="text" name="username"><br>
+            Firstname<input type="text" name="firstname"><br>
+            Lastname<input type="text" name="lastname"><br>
+            Role:
+            Administrator<input type="checkbox" name="role" value="administrator">
+            User<input type="checkbox" name="role" value="user"><br>
+            Active:
+            Yes<input type="radio" name="active" value="yes">
+            No<input type="radio" name="active" value="no"><br>
+            <input type="submit" name="Submit">
+        </form>
+        <br>
+    </div>
 </div>
 
 <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>

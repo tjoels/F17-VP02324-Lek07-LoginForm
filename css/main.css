@@ -99,7 +99,7 @@ body {
     font-family: "Century Gothic", CenturyGothic, AppleGothic, SansSerif;
 }
 
-#box {
+.box {
     border: 2px solid black;
     border-radius: 6px;
     box-shadow: 10px 10px 5px #888888;
